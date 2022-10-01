@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #3b2a29, #2e2124, #201a1d, #131114, #030303);
+}
+
+.container{
+    border: 2px solid black;
+    width: 700px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.past{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    opacity: 0.5;
+}
+
+#ipt{
+    border: 2px solid gray;
+    width: 80%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    grid-column: 1 /3;
+    border-radius: 20px;
+    padding: 5px;
+   
+    padding-left: 60%;
+    
+}
+
+#ipt::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.answer{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 20px;
+}
+
+
+#oper{
+    display: flex;
+    max-width:  280px; 
+    height: 280px;
+    gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#oper > button{
+    width: 100px;
+    height: 120px;
+    border: 0;
+    border-radius: 20px;
+}
+
+.mult{
+    background-image: url(./multi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+.less{
+    background-image: url(./pngwing.com\ \(3\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+.plus{
+    background-image: url(./addition-thick-symbol.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+
+.slide{
+    background-image: url(./slide.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+}

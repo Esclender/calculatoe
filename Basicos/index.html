@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input id="ipt" type="number" >
+        <button class="answer" onclick="resul()" >Respuesta</button>
+        <span class="past"></span>
+        <div id="oper" >
+            <button class="mult" onclick="saveValue(3)" ></button>
+            <button class="slide" onclick="saveValue(4)"></button>
+            <button class="plus" onclick="saveValue(1)" ></button>
+            <button class="less" onclick="saveValue(2)" ></button>
+            
+        </div>
+        <div class="result" >
+            <h1 id="result-tit"></h1>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="./data.js"></script>
+</body>
+</html>
